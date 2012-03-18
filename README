@@ -1,0 +1,29 @@
+=================================================================
+	JIDE 1.0 (Beta)
+=================================================================
+
+JIDE is a simple IDE for Java language. It is designed specifically 
+for beginner Java programmers who face difficulty in using
+complex to configure IDEs and thus prefer to use notepad and command
+prompt to write and run their programs.
+
+JIDE has a simple interface and is very easy and quick to configure.
+
+
+JIDE is open source under the GNU GENERAL PUBLIC LICENSE 
+Version 3, 29 June 2007
+
+The copy of the license can be found in the Installation folder.
+
+Project Repository : http://sourceforge.net/projects/jide
+
+
+Credits :
+---------
+Kushagra Gour
+Navin Kumar
+Shobhit Ghai
+
+For more info, contact us at: [  chinchang457@gmail.com  ]
+
+We hope JIDE proves useful to our fellow programmer :)
