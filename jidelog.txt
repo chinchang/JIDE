@@ -1,0 +1,4 @@
+Runnning hello.java...  
+-------  
+OUTPUT :  
+hello world

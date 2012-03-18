@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="JIDE" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Release">
+				<Option output="bin\Release\JIDE" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj\Release\" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Option projectLinkerOptionsRelation="2" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="$(#wx)\lib\gcc_dll\mswu" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="$(#wx)\lib\gcc_dll\mswu" />
+				</ResourceCompiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="libwxmsw28u.a" />
+					<Add library="..\..\..\..\01001110\wxWidgets-2.8.11\lib\gcc_dll\libwxmsw28u_stc.a" />
+					<Add directory="$(#wx)\lib\gcc_dll" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-pipe" />
+			<Add option="-mthreads" />
+			<Add option="-D__GNUWIN32__" />
+			<Add option="-D__WXMSW__" />
+			<Add option="-DWXUSINGDLL" />
+			<Add option="-DwxUSE_UNICODE" />
+			<Add option='[[if (PLATFORM == PLATFORM_MSW &amp;&amp; (GetCompilerFactory().GetCompilerVersionString(_T(&quot;gcc&quot;)) &gt;= _T(&quot;4.0.0&quot;))) print(_T(&quot;-Wno-attributes&quot;));]]' />
+			<Add option="-Wall" />
+			<Add directory="$(#wx)\include" />
+			<Add directory="$(#wx)\contrib\include" />
+		</Compiler>
+		<ResourceCompiler>
+			<Add directory="$(#wx)\include" />
+		</ResourceCompiler>
+		<Linker>
+			<Add option="-mthreads" />
+		</Linker>
+		<Unit filename="CompilerDlg.cpp" />
+		<Unit filename="CompilerDlg.h" />
+		<Unit filename="JIDEApp.cpp" />
+		<Unit filename="JIDEApp.h" />
+		<Unit filename="JIDEMain.cpp" />
+		<Unit filename="JIDEMain.h" />
+		<Unit filename="LicenseDlg.cpp" />
+		<Unit filename="LicenseDlg.h" />
+		<Unit filename="MyStc.cpp" />
+		<Unit filename="MyStc.h" />
+		<Unit filename="WelcomeDlg.cpp" />
+		<Unit filename="WelcomeDlg.h" />
+		<Unit filename="resource.rc">
+			<Option compilerVar="WINDRES" />
+		</Unit>
+		<Unit filename="wxsmith\JIDEframe.wxs" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<wxsmith version="1">
+				<gui name="wxWidgets" src="JIDEApp.cpp" main="JIDEFrame" init_handlers="necessary" language="CPP" />
+				<resources>
+					<wxFrame wxs="wxsmith/JIDEframe.wxs" src="JIDEMain.cpp" hdr="JIDEMain.h" name="JIDEFrame" language="CPP" />
+					<wxDialog wxs="wxsmith/CompilerDlg.wxs" src="CompilerDlg.cpp" hdr="CompilerDlg.h" name="CompilerDlg" language="CPP" />
+					<wxDialog wxs="wxsmith/LicenseDlg.wxs" src="LicenseDlg.cpp" hdr="LicenseDlg.h" name="LicenseDlg" language="CPP" />
+					<wxDialog wxs="wxsmith/WelcomeDlg.wxs" src="WelcomeDlg.cpp" hdr="WelcomeDlg.h" name="WelcomeDlg" language="CPP" />
+				</resources>
+			</wxsmith>
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
