@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<wxsmith>
+	<object class="wxFrame" name="JIDEFrame">
+		<title>JIDE 1.0 (Beta)</title>
+		<centered>1</centered>
+		<icon>C:\Users\Chang\Desktop\JIDE\jide_icon.ico</icon>
+		<size>800,600</size>
+		<focused>1</focused>
+		<object class="wxSplitterWindow" name="ID_SPLITTERWINDOW1" variable="SplitterWindow1" member="yes">
+			<sashpos>-5</sashpos>
+			<minsize>10</minsize>
+			<pos>200,160</pos>
+			<minsize>10,10</minsize>
+			<style>wxSP_3D|wxHSCROLL</style>
+			<object class="wxNotebook" name="ID_NOTEBOOK1" variable="Notebook1" member="yes">
+				<pos>262,365</pos>
+				<size>0,100</size>
+				<focused>1</focused>
+			</object>
+			<object class="wxTextCtrl" name="ID_TEXTCTRL1" variable="TextCtrl1" member="yes">
+				<pos>0,367</pos>
+				<size>700,130</size>
+				<style>wxTE_MULTILINE|wxTE_READONLY</style>
+			</object>
+		</object>
+		<object class="wxStatusBar" name="ID_STATUSBAR1" variable="StatusBar1" member="yes">
+			<fields>1</fields>
+			<widths>-1</widths>
+			<styles>wxSB_NORMAL</styles>
+		</object>
+		<object class="wxMenuBar" variable="MenuBar1" member="yes">
+			<object class="wxMenu" variable="Menu1" member="no">
+				<label>File</label>
+				<object class="wxMenuItem" name="idMenuNew" variable="MenuItem1" member="no">
+					<label>New</label>
+					<accel>Ctrl-N</accel>
+					<help>Create a new file</help>
+					<handler function="OnMenuNew" entry="EVT_MENU" />
+				</object>
+				<object class="wxMenuItem" name="idMenuOpen" variable="MenuItem2" member="no">
+					<label>Open</label>
+					<accel>Ctrl-O</accel>
+					<help>Open an existing file</help>
+					<handler function="OnMenuOpen" entry="EVT_MENU" />
+				</object>
+				<object class="wxMenuItem" name="idMenuSave" variable="MenuItem3" member="no">
+					<label>Save</label>
+					<accel>Ctrl-S</accel>
+					<help>Save current file</help>
+					<enabled>0</enabled>
+					<handler function="OnMenuSave" entry="EVT_MENU" />
+				</object>
+				<object class="wxMenuItem" name="idMenuClose" variable="MenuItem4" member="yes">
+					<label>Close</label>
+					<accel>Ctrl-W</accel>
+					<help>Close current file</help>
+					<handler function="OnMenuClose" entry="EVT_MENU" />
+				</object>
+				<object class="separator" />
+				<object class="wxMenuItem" name="idMenuQuit" variable="MenuItem5" member="yes">
+					<label>Quit</label>
+					<help>Quit JIDE</help>
+					<handler function="OnQuit" entry="EVT_MENU" />
+				</object>
+			</object>
+			<object class="wxMenu" variable="Menu4" member="no">
+				<label>Build</label>
+				<object class="wxMenuItem" name="idMenuCompile" variable="MenuItem8" member="no">
+					<label>Compile</label>
+					<accel>F3</accel>
+					<help>Compile the current file</help>
+					<handler function="OnMenuCompile" entry="EVT_MENU" />
+				</object>
+				<object class="wxMenuItem" name="idMenuRun" variable="MenuItem9" member="no">
+					<label>Run</label>
+					<accel>F4</accel>
+					<help>Run the current file</help>
+					<handler function="OnMenuRun" entry="EVT_MENU" />
+				</object>
+			</object>
+			<object class="wxMenu" variable="Menu2" member="no">
+				<label>Options</label>
+				<object class="wxMenuItem" name="idMenuCompiler" variable="MenuItem6" member="no">
+					<label>Compiler profiles</label>
+					<accel>F2</accel>
+					<help>Compiler profile settings</help>
+					<handler function="OnMenuCompiler" entry="EVT_MENU" />
+				</object>
+			</object>
+			<object class="wxMenu" variable="Menu3" member="no">
+				<label>Help</label>
+				<object class="wxMenuItem" name="idMenuStartPage" variable="MenuItem10" member="yes">
+					<label>Start page</label>
+					<help>Open start page for getting started</help>
+					<handler function="OnMenuStartPage" entry="EVT_MENU" />
+				</object>
+				<object class="wxMenuItem" name="idMenuLicense" variable="MenuItem11" member="no">
+					<label>License</label>
+					<help>See JIDE License</help>
+					<handler function="OnMenuLicense" entry="EVT_MENU" />
+				</object>
+				<object class="wxMenuItem" name="idMenuAbout" variable="MenuItem7" member="no">
+					<label>About</label>
+					<accel>F1</accel>
+					<help>About JIDE</help>
+					<handler function="OnAbout" entry="EVT_MENU" />
+				</object>
+			</object>
+		</object>
+	</object>
+</wxsmith>

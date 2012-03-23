@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<wxsmith>
+	<object class="wxDialog" name="LicenseDlg">
+		<title>License - JIDE</title>
+		<centered>1</centered>
+		<size>418,584</size>
+		<id_arg>0</id_arg>
+		<style>wxCAPTION|wxSYSTEM_MENU|wxCLOSE_BOX</style>
+		<object class="wxBoxSizer" variable="BoxSizer1" member="no">
+			<orient>wxVERTICAL</orient>
+			<object class="sizeritem">
+				<object class="wxStaticBitmap" name="ID_STATICBITMAP1" variable="StaticBitmap1" member="yes">
+					<bitmap>D:\import_all_source\Others\cblocks projects\JIDE - Final\gplv3-88x31.png</bitmap>
+					<pos>-1,0</pos>
+				</object>
+				<flag>wxALL|wxSHAPED|wxALIGN_TOP|wxALIGN_CENTER_HORIZONTAL</flag>
+				<border>5</border>
+			</object>
+			<object class="sizeritem">
+				<object class="wxTextCtrl" name="ID_TEXTCTRL1" variable="TextCtrl1" member="yes">
+					<value>Text</value>
+					<size>406,321</size>
+					<style>wxTE_AUTO_SCROLL|wxTE_MULTILINE|wxTE_READONLY</style>
+				</object>
+				<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+				<border>5</border>
+			</object>
+		</object>
+	</object>
+</wxsmith>
