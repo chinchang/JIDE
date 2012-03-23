@@ -1,0 +1,3 @@
+aaaa ICON "jide_icon.ico"
+
+#include "wx/msw/wx.rc"
